@@ -9,7 +9,9 @@
     <script src="/assets/js/app.js" defer></script>
   </head>
   <body data-controller="hello">
-    <h1>{{ title }}</h1>
+    <h1 class="bg-blue-200">{{ title }}</h1>
     {{ content | safe }}
+
+    {% include "footer.njk" %}
   </body>
 </html>
