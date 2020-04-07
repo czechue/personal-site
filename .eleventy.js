@@ -21,6 +21,7 @@ module.exports = function(eleventyConfig) {
    * @link https://www.11ty.io/docs/copy/
    */
   eleventyConfig.addPassthroughCopy('./src/site/favicon.ico')
+  eleventyConfig.addPassthroughCopy({'./src/assets/img': "assets/img"})
 
   /**
    * Add filters
